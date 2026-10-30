@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Super JinX</title>
+<style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#09090b;--mu:#71717a;--bd:#e4e4e7;--pr:#2563eb}
+@media(prefers-color-scheme:dark){:root{--bg:#09090b;--fg:#fafafa;--mu:#a1a1aa;--bd:#27272a;--pr:#3b82f6}}
+*{box-sizing:border-box;margin:0}body{min-height:100vh;display:grid;place-items:center;padding:24px;background:var(--bg);color:var(--fg);font:15px/1.7 Vazirmatn,Tahoma,"Segoe UI",system-ui,sans-serif}
+.c{width:100%;max-width:380px;text-align:center;padding:28px 22px;border:1px solid var(--bd);border-radius:14px}
+.s{width:34px;height:34px;margin:0 auto 16px;border-radius:50%;border:3px solid var(--bd);border-top-color:var(--pr);animation:r .8s linear infinite}@keyframes r{to{transform:rotate(360deg)}}
+h1{font-size:17px;font-weight:700}p{color:var(--mu);font-size:13.5px;margin-top:4px}.en{direction:ltr;margin-top:14px;padding-top:14px;border-top:1px solid var(--bd);font-size:12.5px}
+button{margin-top:18px;height:38px;padding:0 18px;border-radius:8px;border:1px solid var(--bd);background:none;color:inherit;font:inherit;font-size:13.5px;cursor:pointer}
+</style></head><body><div class="c"><div class="s"></div><h1>پنل در حال آماده شدنه</h1><p>چند ثانیه صبر کن، صفحه خودش دوباره باز میشه (<span id="n">5</span>).</p>
+<p class="en">The panel is starting up. This page reloads by itself.</p><button type="button" onclick="location.reload()">تلاش دوباره</button></div>
+<script>(function(){var n=5,e=document.getElementById("n"),t=setInterval(function(){n--;if(e)e.textContent=String(Math.max(n,0));if(n<=0){clearInterval(t);location.reload()}},1000)})();</script>
+</body></html>

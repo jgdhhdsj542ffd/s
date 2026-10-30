@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#04050a">
+<meta name="robots" content="noindex,nofollow">
+<title>Super JinX | در حال آماده‌سازی پنل</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2716%27 fill=%27%23111%27/%3E%3Ctext x=%2732%27 y=%2745%27 font-size=%2738%27 font-family=%27Georgia%27 font-style=%27italic%27 font-weight=%27700%27 text-anchor=%27middle%27 fill=%27%235ef2ff%27%3EJ%3C/text%3E%3C/svg%3E">
+<script>try{var n=navigator;if((n.deviceMemory&&n.deviceMemory<=3)||(n.hardwareConcurrency&&n.hardwareConcurrency<=4))document.documentElement.className+=" lite"}catch(e){}</script>
+<style>
+:root{--ac:#5ef2ff;--acr:94,242,255;--ac2:#e6fdff;--ac3:#8b7bff;--ac3r:139,123,255;--ok:#4ade80;--okr:74,222,128;--bg:#04050a;--tx:#f3f6ff;--mu:#8590a6;--ln:rgba(255,255,255,.09);--e:cubic-bezier(.22,1,.36,1);--sp:cubic-bezier(.34,1.56,.64,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--tx);overflow-x:hidden}
+body{min-height:100vh;min-height:100dvh;font:15px/1.8 Vazirmatn,Vazir,"IRANSansX","Noto Sans Arabic",Tahoma,"Segoe UI",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.lat{direction:ltr;unicode-bidi:isolate;font-family:"Segoe UI",Roboto,Arial,sans-serif}
+/* sky */
+.sky{position:fixed;top:0;right:0;bottom:0;left:0;z-index:0;pointer-events:none;overflow:hidden}
+.sky .a,.sky .b{position:absolute;border-radius:50%}
+.sky .a{width:900px;height:900px;top:-520px;left:50%;margin-left:-450px;background:radial-gradient(circle,rgba(var(--acr),.15),transparent 62%)}
+.sky .b{width:700px;height:700px;bottom:-420px;right:-260px;background:radial-gradient(circle,rgba(var(--ac3r),.18),transparent 64%)}
+.sky .g{position:absolute;top:0;right:0;bottom:0;left:0;background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);background-size:46px 46px;-webkit-mask:radial-gradient(75% 60% at 50% 35%,#000,transparent 80%);mask:radial-gradient(75% 60% at 50% 35%,#000,transparent 80%)}
+#stars{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.done .sky .a{background:radial-gradient(circle,rgba(var(--okr),.14),transparent 62%);transition:background 1s}
+/* layout */
+.wrap{position:relative;z-index:1;min-height:100vh;min-height:100dvh;display:grid;align-content:center;justify-items:center;gap:6px;padding:max(24px,env(safe-area-inset-top)) 18px max(24px,env(safe-area-inset-bottom))}
+.top{display:flex;align-items:center;gap:10px;margin-bottom:6px;direction:ltr}
+.top i{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;font:italic 700 19px Georgia,serif;color:#031317;background:linear-gradient(135deg,var(--ac2),var(--ac) 45%,var(--ac3));box-shadow:0 0 24px rgba(var(--acr),.5)}
+.top b{font:800 14px "Segoe UI",Arial,sans-serif;letter-spacing:5px;background:linear-gradient(100deg,var(--ac),var(--ac2) 40%,var(--ac3));-webkit-background-clip:text;background-clip:text;color:transparent}
+/* stage */
+.stage{position:relative;width:min(78vw,300px);height:min(78vw,300px);margin:6px 0 4px}
+.stage canvas{position:absolute;top:0;left:0;width:100%;height:100%}
+.stage svg.ring{position:absolute;top:-14px;left:-14px;width:calc(100% + 28px);height:calc(100% + 28px);transform:rotate(-90deg);overflow:visible}
+.ring .t{fill:none;stroke:rgba(255,255,255,.06);stroke-width:3}
+.ring .p{fill:none;stroke:url(#gr);stroke-width:3.5;stroke-linecap:round;transition:stroke-dashoffset 1.2s var(--e),stroke .6s;filter:drop-shadow(0 0 6px rgba(var(--acr),.8))}
+.done .ring .p{stroke:var(--ok);filter:drop-shadow(0 0 8px rgba(var(--okr),.9))}
+.ring .tk{fill:none;stroke:rgba(var(--acr),.35);stroke-width:1;stroke-dasharray:1 7}
+.core{position:absolute;top:50%;left:50%;width:92px;height:92px;margin:-46px 0 0 -46px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,rgba(var(--acr),.35),rgba(4,5,10,.92) 70%);border:1px solid rgba(var(--acr),.45);box-shadow:0 0 50px rgba(var(--acr),.35);transition:transform .6s var(--sp),border-color .6s,box-shadow .6s}
+.core b{font:italic 700 40px/1 Georgia,"Times New Roman",serif;color:var(--ac2);text-shadow:0 0 18px rgba(var(--acr),.8)}
+.core::before{content:"";position:absolute;top:-10px;right:-10px;bottom:-10px;left:-10px;border-radius:50%;border:1.5px solid rgba(var(--acr),.5);animation:wave 2.6s ease-out infinite}
+.done .core{border-color:rgba(var(--okr),.7);box-shadow:0 0 70px rgba(var(--okr),.45);transform:scale(1.08)}.done .core::before{border-color:rgba(var(--okr),.6)}
+.core svg{display:none;width:40px;height:40px}.done .core b{display:none}.done .core svg{display:block;animation:pop .6s var(--sp)}
+@keyframes wave{to{transform:scale(1.5);opacity:0}}@keyframes pop{from{transform:scale(.2);opacity:0}}
+/* text */
+.pc{direction:ltr;font:200 clamp(46px,14vw,64px)/1 "Segoe UI",Roboto,Arial,sans-serif;letter-spacing:-2px;margin-top:8px;font-variant-numeric:tabular-nums}
+.pc em{font-style:normal;font-size:.45em;color:var(--mu);margin-left:2px}
+h1{font-size:clamp(19px,5.4vw,24px);font-weight:900;text-align:center;line-height:1.5}
+.lead{max-width:420px;text-align:center;font-size:13.5px;color:var(--mu)}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:10px 0 2px}
+.chip{display:inline-flex;align-items:center;gap:8px;height:34px;padding:0 14px;border-radius:99px;font-size:12.5px;font-weight:800;background:rgba(255,255,255,.04);border:1px solid var(--ln);white-space:nowrap}
+.chip i{width:8px;height:8px;border-radius:50%;background:var(--ac);box-shadow:0 0 8px var(--ac);animation:bl 1.4s infinite}
+.chip b{font-variant-numeric:tabular-nums}
+.done .chip i{animation:none;background:var(--ok);box-shadow:0 0 8px var(--ok)}
+@keyframes bl{50%{opacity:.3}}
+/* steps */
+.steps{list-style:none;width:100%;max-width:520px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px}
+.st{position:relative;padding:12px 6px 10px;border-radius:18px;text-align:center;background:linear-gradient(170deg,rgba(255,255,255,.05),rgba(255,255,255,.012));border:1px solid var(--ln);transition:border-color .4s,background .4s,transform .4s var(--sp)}
+.st .ic{width:38px;height:38px;margin:0 auto 6px;border-radius:13px;display:grid;place-items:center;color:var(--mu);background:rgba(255,255,255,.04);border:1px solid var(--ln);position:relative;transition:.4s}
+.st .ic svg{width:18px;height:18px}
+.st b{display:block;font-size:11.5px;font-weight:800;line-height:1.5}
+.st small{display:block;font-size:10.5px;color:var(--mu);line-height:1.5;margin-top:2px}
+.st.run{border-color:rgba(var(--acr),.45);transform:translateY(-3px)}
+.st.run .ic{color:var(--ac);border-color:rgba(var(--acr),.5)}
+.st.run .ic::after{content:"";position:absolute;top:-4px;right:-4px;bottom:-4px;left:-4px;border-radius:16px;border:1.5px solid transparent;border-top-color:var(--ac);animation:r 1s linear infinite}
+.st.ok .ic{color:#04110a;background:var(--ok);border-color:var(--ok)}.st.ok small{color:var(--ok)}
+@keyframes r{to{transform:rotate(360deg)}}
+.live{display:flex;align-items:center;gap:10px;width:100%;max-width:520px;margin-top:10px;padding:10px 14px;border-radius:14px;background:rgba(0,0,0,.35);border:1px solid var(--ln);font-size:12.5px;color:#c9d2e3;min-height:42px}
+.live .d{width:7px;height:7px;flex-shrink:0;border-radius:50%;background:var(--ac);box-shadow:0 0 8px var(--ac)}
+.live span{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:opacity .35s}
+.live span.f{opacity:0}
+.live time{direction:ltr;font:600 11.5px ui-monospace,Menlo,Consolas,monospace;color:var(--mu);flex-shrink:0}
+/* ready */
+.go{display:none;align-items:center;justify-content:center;gap:10px;width:100%;max-width:520px;height:56px;margin-top:14px;border:0;border-radius:18px;font:inherit;font-size:15.5px;font-weight:900;color:#04110a;background:linear-gradient(135deg,#d9ffe8,var(--ok) 55%,#22c55e);cursor:pointer;box-shadow:0 18px 40px -16px rgba(var(--okr),.9);animation:rise .6s var(--e)}
+.go svg{width:20px;height:20px}
+.done .go{display:flex}
+.note{margin-top:10px;font-size:12px;color:var(--mu);text-align:center}
+.note a{color:var(--ac);font-weight:800;text-decoration:none}
+.slow{display:none;max-width:520px;margin-top:10px;padding:10px 14px;border-radius:14px;font-size:12.5px;line-height:1.8;color:#fde68a;background:rgba(251,191,36,.07);border:1px solid rgba(251,191,36,.25);text-align:center}
+.isslow .slow{display:block}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}}
+.wrap>*{animation:rise .8s var(--e) both}.wrap>*:nth-child(2){animation-delay:.08s}.wrap>*:nth-child(3){animation-delay:.16s}.wrap>*:nth-child(4){animation-delay:.22s}.wrap>*:nth-child(5){animation-delay:.28s}.wrap>*:nth-child(6){animation-delay:.34s}
+/* desktop */
+@media(min-width:960px){
+ .wrap{grid-template-columns:auto minmax(0,520px);grid-template-areas:"stage top" "stage pc" "stage h1" "stage lead" "stage chips" "stage steps" "stage live" "stage go" "stage slow" "stage note";column-gap:64px;row-gap:4px;justify-content:center;align-content:center;justify-items:start}
+ .stage{grid-area:stage;width:400px;height:400px;align-self:center}
+ .top{grid-area:top}.pc{grid-area:pc}h1{grid-area:h1;text-align:start}.lead{grid-area:lead;text-align:start}.chips{grid-area:chips;justify-content:flex-start}.steps{grid-area:steps}.live{grid-area:live}.go{grid-area:go}.slow{grid-area:slow;text-align:start}.note{grid-area:note;text-align:start}
+ .core{width:110px;height:110px;margin:-55px 0 0 -55px}.core b{font-size:48px}
+}
+@media(max-width:360px){.steps{grid-template-columns:1fr 1fr}.chip{height:32px;padding:0 11px;font-size:12px}}
+@media(max-height:640px) and (max-width:959px){.stage{width:min(56vw,210px);height:min(56vw,210px)}.pc{font-size:42px}}
+html.lite .core::before,html.lite .chip i{animation:none}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="sky" aria-hidden="true"><i class="g"></i><i class="a"></i><i class="b"></i></div>
+<canvas id="stars" aria-hidden="true"></canvas>
+<main class="wrap" id="wrap">
+ <div class="stage" aria-hidden="true">
+  <canvas id="globe"></canvas>
+  <svg class="ring" viewBox="0 0 200 200"><defs><linearGradient id="gr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e6fdff"/><stop offset=".5" stop-color="#5ef2ff"/><stop offset="1" stop-color="#8b7bff"/></linearGradient></defs><circle class="tk" cx="100" cy="100" r="99"/><circle class="t" cx="100" cy="100" r="94"/><circle class="p" id="arc" cx="100" cy="100" r="94" stroke-dasharray="590.6" stroke-dashoffset="590.6"/></svg>
+  <div class="core"><b>J</b><svg viewBox="0 0 24 24" fill="none" stroke="#d9ffe8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+ </div>
+ <div class="top"><i>J</i><b>SUPER JINX</b></div>
+ <div class="pc" id="pc">0<em>%</em></div>
+ <h1 id="ttl">پنل شما در حال آماده شدنه</h1>
+ <p class="lead" id="lead">همه‌چیز خودکار نصب و تنظیم میشه. همین صفحه رو باز نگه دار، وقتی آماده شد خودت وارد پنل میشی.</p>
+ <div class="chips"><span class="chip"><i></i><span id="eta">چند دقیقه‌ی دیگه آماده‌ست</span></span><span class="chip"><span>زمان سپری‌شده</span><b class="lat" id="el">00:00</b></span></div>
+ <ol class="steps" id="steps">
+  <li class="st" data-k="server"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></span><b>سرور</b><small>در انتظار</small></li>
+  <li class="st" data-k="panel"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span><b>پنل و دیتابیس</b><small>در انتظار</small></li>
+  <li class="st" data-k="core"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2.5"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/></svg></span><b>هسته‌ی Xray</b><small>در انتظار</small></li>
+  <li class="st" data-k="configs"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></span><b>کانفیگ‌ها</b><small>در انتظار</small></li>
+ </ol>
+ <div class="live" aria-live="polite"><i class="d"></i><span id="msg">در حال ارتباط با سرور...</span><time id="clk" class="lat"></time></div>
+ <button class="go" id="go" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l-5-5 5-5M5 12h12"/></svg><span id="gotx">ورود به پنل</span></button>
+ <p class="slow">نصب بیشتر از حد معمول طول کشیده. معمولاً تا چند دقیقه‌ی دیگه درست میشه؛ اگه نشد، بخش Deploy Logs توی Railway رو نگاه کن.</p>
+ <p class="note">آموزش‌ها و آپدیت‌ها: <a href="https://t.me/+WvKFv0lU_i5lNGE0" target="_blank" rel="noopener">کانال <span class="lat">@Super_Jinx</span></a></p>
+</main>
+<script>
+(function(){
+"use strict";
+var PANEL="/dashboard/",ORDER=["server","panel","core","configs"],t0=Date.now(),doneAt=0,timer=0,curPct=0;
+var RM=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches,LITE=document.documentElement.className.indexOf("lite")>-1;
+var DEMO=!/^https?:$/.test(location.protocol);
+function $(i){return document.getElementById(i)}
+function fa(n){return String(n).replace(/[0-9]/g,function(d){return "۰۱۲۳۴۵۶۷۸۹".charAt(+d)})}
+function mmss(s){s=Math.max(0,Math.round(s));var m=Math.floor(s/60),r=s%60;return (m<10?"0":"")+m+":"+(r<10?"0":"")+r}
+var MSG={server:"سرور روشن شد و داره پنل رو بالا میاره",panel:"پنل و دیتابیس راه افتاد، داریم هسته‌ی Xray رو وصل می‌کنیم",core:"هسته وصل شد، داریم کانفیگ‌ها و گروه‌ها رو می‌سازیم",configs:"کانفیگ‌ها ساخته شد، آخرین تنظیمات...",wait:"در حال ارتباط با سرور..."};
+function say(t){var m=$("msg");if(m.textContent===t)return;m.classList.add("f");setTimeout(function(){m.textContent=t;m.classList.remove("f");$("clk").textContent=new Date().toTimeString().slice(0,8)},RM?0:300)}
+function setPct(p){p=Math.max(curPct,Math.min(100,p));var from=curPct;curPct=p;$("arc").style.strokeDashoffset=String(590.6*(1-p/100));
+ if(RM||LITE){$("pc").innerHTML=Math.round(p)+"<em>%</em>";return}var t1=0;requestAnimationFrame(function f(t){if(!t1)t1=t;var k=Math.min(1,(t-t1)/900),v=from+(p-from)*(1-Math.pow(1-k,3));$("pc").innerHTML=Math.round(v)+"<em>%</em>";if(k<1)requestAnimationFrame(f)})}
+function paint(st,reached){
+ var n=0,first=true;
+ ORDER.forEach(function(k){var li=document.querySelector('[data-k="'+k+'"]'),on=(k==="server"&&reached)||!!st[k];li.classList.remove("run");
+  if(on){n++;li.classList.add("ok");li.querySelector("small").textContent="انجام شد"}
+  else{li.classList.remove("ok");if(first){first=false;li.classList.add("run");li.querySelector("small").textContent="در حال انجام"}else li.querySelector("small").textContent="در انتظار"}});
+ if(st.ready){ready();return}
+ /* progress: finished steps + a slow crawl inside the running one, never stuck at a number */
+ var el=(Date.now()-t0)/1000,base=n/ORDER.length*100,crawl=Math.min(22,el/4%25);
+ setPct(Math.min(97,base+(n<ORDER.length?crawl*(1-n/ORDER.length):0)));
+ var k=n?ORDER[n-1]:"wait";say(MSG[k]);
+ var sinceS=st.since!=null?st.since:el,left=Math.max(20,[210,170,110,60,30][n]-Math.max(0,sinceS-[0,20,60,100,140][n])*.5);
+ $("eta").textContent=left>=90?("حدود "+fa(Math.round(left/60))+" دقیقه‌ی دیگه آماده‌ست"):left>=45?"کمتر از یک دقیقه‌ی دیگه":"چند ثانیه‌ی دیگه";
+ document.body.classList.toggle("isslow",el>360)}
+function ready(){if(doneAt)return;doneAt=Date.now();clearTimeout(timer);
+ document.body.classList.add("done");ORDER.forEach(function(k){var li=document.querySelector('[data-k="'+k+'"]');li.classList.remove("run");li.classList.add("ok");li.querySelector("small").textContent="انجام شد"});
+ setPct(100);$("ttl").textContent="پنل شما آماده‌ست";$("lead").textContent="همه‌چیز نصب و تنظیم شد و کانفیگ‌ها ساخته شدن. خوش اومدی!";$("eta").textContent="آماده";say("همه‌چیز آماده‌ست");document.body.classList.remove("isslow");
+ if(DEMO){$("gotx").textContent="ورود به پنل";return}
+ var c=4;(function tk(){c--;if(c<=0){location.replace(PANEL);return}$("gotx").textContent="ورود به پنل ("+fa(c)+")";setTimeout(tk,1000)})()}
+$("go").onclick=function(){if(DEMO){alert("این یه پیش‌نمایشه؛ روی سرور، این دکمه وارد پنل میشه.");return}location.replace(PANEL)};
+setInterval(function(){if(!doneAt)$("el").textContent=mmss((Date.now()-t0)/1000)},1000);
+function poll(){
+ if(DEMO){var s=(Date.now()-t0)/1000;paint({panel:s>4,core:s>9,configs:s>14,ready:s>18,since:s*10},s>1.5);if(!doneAt)timer=setTimeout(poll,800);return}
+ var ctl=window.AbortController?new AbortController():null,to=setTimeout(function(){if(ctl)ctl.abort()},6000);
+ fetch("/jinx/ready?t="+Date.now(),{cache:"no-store",signal:ctl?ctl.signal:undefined})
+  .then(function(r){if(!r.ok)throw 0;return r.json()})
+  .then(function(j){clearTimeout(to);paint(j||{},true);if(!doneAt)timer=setTimeout(poll,2500)})
+  .catch(function(){clearTimeout(to);paint({},true);if(!doneAt)timer=setTimeout(poll,3500)});
+}
+paint({},false);setTimeout(poll,400);
+
+/* the planet */
+(function(){var cv=$("globe");if(!cv||!cv.getContext)return;var x=cv.getContext("2d"),S=0,dpr=Math.min(LITE?1:1.5,window.devicePixelRatio||1),N=LITE?260:460,P=[],rot=0,tilt=.38,t0g=performance.now(),last=t0g;
+ for(var i=0;i<N;i++){var y=1-(i/(N-1))*2,r=Math.sqrt(1-y*y),th=i*2.399963;P.push([Math.cos(th)*r,y,Math.sin(th)*r])}
+ function ll(lo,la){return [Math.cos(la)*Math.cos(lo),Math.sin(la),Math.cos(la)*Math.sin(lo)]}
+ var ND=[ll(.6,.35),ll(-.4,.9),ll(1.9,.2),ll(2.6,-.35),ll(3.8,.55),ll(4.6,-.1),ll(5.4,.7)],AR=[[0,2],[2,3],[3,5],[1,4],[4,6],[0,5]];
+ function sl(a,b,t){var d=a[0]*b[0]+a[1]*b[1]+a[2]*b[2],o=Math.acos(Math.max(-1,Math.min(1,d))),so=Math.sin(o)||1,k1=Math.sin((1-t)*o)/so,k2=Math.sin(t*o)/so,h=1+Math.sin(t*Math.PI)*.22;return [(a[0]*k1+b[0]*k2)*h,(a[1]*k1+b[1]*k2)*h,(a[2]*k1+b[2]*k2)*h]}
+ var ARP=AR.map(function(a){var o=[];for(var j=0;j<=20;j++)o.push(sl(ND[a[0]],ND[a[1]],j/20));return o});
+ function rs(){var w=cv.getBoundingClientRect().width;if(!w)return;S=w;cv.width=Math.round(S*dpr);cv.height=Math.round(S*dpr);x.setTransform(dpr,0,0,dpr,0,0)}rs();var rt=0;addEventListener("resize",function(){clearTimeout(rt);rt=setTimeout(rs,120)});
+ var cR=1,sR=0,cT=Math.cos(tilt),sT=Math.sin(tilt);function pr(p){var X=p[0]*cR-p[2]*sR,Z=p[0]*sR+p[2]*cR,Y=p[1];return [X,Y*cT-Z*sT,Y*sT+Z*cT]}
+ function frame(now){requestAnimationFrame(frame);if(document.hidden||!S)return;var dt=Math.max(0,Math.min(50,now-last));last=now;if(!RM)rot+=(doneAt?.006:.0035)*dt/16.7;cR=Math.cos(rot);sR=Math.sin(rot);
+  var R=S*.42,cx=S/2,cy=S/2,tm=Math.max(0,(now-t0g)/1000),col=doneAt?"74,222,128":"94,242,255",col2=doneAt?"187,247,208":"139,123,255";x.clearRect(0,0,S,S);
+  var B=[[],[],[],[],[]];for(var i=0;i<N;i++){var q=pr(P[i]);if(q[2]<-.1)continue;var d=(q[2]+1)/2,bi=Math.min(4,d*5|0),sz=.7+d*1.5;B[bi].push(cx+q[0]*R-sz/2,cy-q[1]*R-sz/2,sz)}
+  for(var b=0;b<5;b++){var a=B[b];if(!a.length)continue;x.fillStyle="rgba("+col+","+(.1+b*.18).toFixed(2)+")";x.beginPath();for(var j=0;j<a.length;j+=3)x.rect(a[j],a[j+1],a[j+2],a[j+2]);x.fill()}
+  x.strokeStyle="rgba("+col+",.3)";x.lineWidth=1;x.beginPath();x.arc(cx,cy,R,0,6.283);x.stroke();
+  ARP.forEach(function(pts,k){x.lineWidth=1.1;x.strokeStyle="rgba("+col+",.35)";x.beginPath();var mv=true;for(var j=0;j<pts.length;j++){var q=pr(pts[j]);if(q[2]<-.05){mv=true;continue}var px=cx+q[0]*R,py=cy-q[1]*R;if(mv){x.moveTo(px,py);mv=false}else x.lineTo(px,py)}x.stroke();
+   var f=(((tm*.35+k*.17)%1)+1)%1,qq=pr(pts[Math.floor(f*(pts.length-1))]);if(qq[2]>-.05){x.fillStyle="rgba(255,255,255,.95)";x.beginPath();x.arc(cx+qq[0]*R,cy-qq[1]*R,2,0,6.283);x.fill()}});
+  ND.forEach(function(n,k){var q=pr(n);if(q[2]<0)return;var px=cx+q[0]*R,py=cy-q[1]*R,pu=(Math.sin(tm*2.2+k)+1)/2;x.strokeStyle="rgba("+col2+","+(.6-pu*.5).toFixed(2)+")";x.beginPath();x.arc(px,py,3+pu*8,0,6.283);x.stroke();x.fillStyle="rgba("+col+",1)";x.beginPath();x.arc(px,py,2.6,0,6.283);x.fill()})}
+ requestAnimationFrame(frame)})();
+/* stars */
+(function(){var cv=$("stars");if(!cv||RM||LITE){if(cv)cv.style.display="none";return}var x=cv.getContext("2d"),W,H,P=[];function rs(){W=innerWidth;H=innerHeight;cv.width=W;cv.height=H}rs();addEventListener("resize",rs);
+ for(var i=0;i<70;i++)P.push([Math.random(),Math.random(),Math.random()*1.2+.3,Math.random()*6.283]);var t0s=performance.now();
+ (function f(t){requestAnimationFrame(f);if(document.hidden)return;var tm=(t-t0s)/1000;x.clearRect(0,0,W,H);for(var i=0;i<P.length;i++){var s=P[i];x.fillStyle="rgba(255,255,255,"+(.15+.45*Math.abs(Math.sin(tm*.6+s[3]))).toFixed(2)+")";x.fillRect(s[0]*W,s[1]*H,s[2],s[2])}})(t0s)})();
+})();
+</script>
+</body>
+</html>
